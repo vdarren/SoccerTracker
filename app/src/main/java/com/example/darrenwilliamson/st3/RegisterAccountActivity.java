@@ -5,7 +5,6 @@ import android.content.DialogInterface;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -26,9 +25,6 @@ public class RegisterAccountActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_account);
 
-        //To hide AppBar for fullscreen.
-        ActionBar ab = getSupportActionBar();
-        ab.hide();
 
         openHelper = new SQLiteDBHelper(this);
 

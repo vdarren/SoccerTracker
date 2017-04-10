@@ -1,7 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
     android:background="@drawable/background">
 
-</LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <ImageView android:src="@drawable/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- Login Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_league_table"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:onClick="sendMessage"
+            android:padding="12dp"
+            android:text="League Table" />
+
+        <!-- DB Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_fixtures"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="0dp"
+            android:onClick="sendMessage"
+            android:padding="12dp"
+            android:text="Fixtures" />
+
+        <!-- Login Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_current_team"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:onClick="sendMessage"
+            android:padding="12dp"
+            android:text="Current Team" />
+
+        <!-- DB Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_next_game"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="0dp"
+            android:onClick="sendMessage"
+            android:padding="12dp"
+            android:text="Next Match" />
+
+    </LinearLayout>
+</ScrollView>
